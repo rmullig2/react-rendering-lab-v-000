@@ -24,7 +24,7 @@ class Circles extends React.Component {
     console.log("\n💥 Red and green were swapped!");
     this.setState({ circles: newCircles });
   }
-
+  
   render() {
     const renderCircles = this.state.circles.map((circle, index) => 
       <Circle color={circle.color} key={index} /> 
